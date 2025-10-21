@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Современный шрифт для лучшей читаемости */
   margin: 0; /* Убираем стандартные отступы браузера */
   padding: 0; /* Убираем стандартные внутренние отступы */
-  background: linear-gradient(90deg, #Indigo 50%, Black 100%); /* Красивый градиентный фон всей страницы */
+  background: linear-gradient(90deg, Violet 50%, Black 100%); /* Красивый градиентный фон всей страницы */
   min-height: 100vh; /* Минимальная высота равна высоте окна браузера */
 }
 /* ===== КОНТЕЙНЕР СТРАНИЦЫ ===== */
@@ -12,7 +12,7 @@ body {
   margin: 0 auto; /* Центрирование контейнера по горизонтали */
   background: #B3DCFD; /* Голубой фон для основного содержимого */
   min-height: 100vh; /* Минимальная высота равна высоте окна браузера */
-  box-shadow: 60px 20px Indigo; /* Тень */
+  box-shadow: 60px 20px Red; /* Тень */
   /* Новое: Сеточный макет для семантических областей */
   display: grid;
   grid-template-rows: auto auto 1fr auto;
