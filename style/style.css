@@ -10,9 +10,9 @@ body {
 .page-container {
   max-width: 1200px; /* Максимальная ширина контента */
   margin: 0 auto; /* Центрирование контейнера по горизонтали */
-  background: white; /* Белый фон для основного содержимого */
+  background: #B3DCFD; /* Голубой фон для основного содержимого */
   min-height: 100vh; /* Минимальная высота равна высоте окна браузера */
-  box-shadow: 0 0 30px rgba(0,0,0,0.1); /* Легкая тень вокруг всего контента */
+  box-shadow: 60px 20px Indigo; /* Тень */
   /* Новое: Сеточный макет для семантических областей */
   display: grid;
   grid-template-rows: auto auto 1fr auto;
