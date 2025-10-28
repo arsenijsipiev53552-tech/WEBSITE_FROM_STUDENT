@@ -226,6 +226,7 @@ main.content {
 @keyframes css-animation-fadeInUp {
   from {
     opacity: 0;
+  }
   to {
     opacity: 1;
   }
