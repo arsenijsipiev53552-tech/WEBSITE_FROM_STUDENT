@@ -224,6 +224,8 @@ main.content {
   margin: 0; /* Убираем отступы */
 }
 @keyframes css-animation-fadeInUp {
+  from {
+    opacity: 0;
   to {
     opacity: 1;
   }
