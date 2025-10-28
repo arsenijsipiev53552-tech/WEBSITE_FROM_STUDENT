@@ -92,7 +92,7 @@ main.content {
   font-weight: 300; /* Легкое начертание шрифта */
 }
 .profile-container {
-  justify-content: start; /* Выравнивание по центру */
+  margin-left: 20px;
   flex-wrap: wrap; /* Перенос на новую строку при необходимости */
   gap: 15px; /* Расстояние между навыками */
   margin: 30px 0; /* Вертикальные отступы */
