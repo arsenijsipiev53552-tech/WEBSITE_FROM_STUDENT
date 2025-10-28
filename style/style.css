@@ -105,7 +105,7 @@ main.content {
   border: 4px solid Red; /* Красная рамка вокруг фото */
   transition: border 0.3s ease;
   opacity: 0; /* Изначально скрыт */
-  animation: fade-in 0.6s ease-out forwards;
+  animation: css-animation-fadeInUp 0.6s ease-out forwards;
 }
 .profile-photo:hover {
   border: 4px solid #800020; /* Тень */
@@ -120,7 +120,7 @@ main.content {
   line-height: 1.8; /* Межстрочный интервал */
   transition: box-shadow 0.3s ease;
   opacity: 0; /* Изначально скрыт */
-  animation: fade-in 0.6s ease-out forwards;
+  animation: css-animation-fadeInUp 0.6s ease-out forwards;
 }
 .profile-name:hover {
   box-shadow: 60px 20px #800020; /* Тень */
@@ -135,7 +135,7 @@ main.content {
   line-height: 1.8; /* Межстрочный интервал */ 
   transition: box-shadow 0.3s ease;
   opacity: 0; /* Изначально скрыт */
-  animation: fade-in 0.6s ease-out forwards;
+  animation: css-animation-fadeInUp 0.6s ease-out forwards;
 }
 .profile-group:hover {
   box-shadow: 60px 20px #800020; /* Тень */
@@ -149,7 +149,7 @@ main.content {
   line-height: 1.8; /* Межстрочный интервал */
   transition: box-shadow 0.3s ease;
   opacity: 0; /* Изначально скрыт */
-  animation: fade-in 0.6s ease-out forwards;
+  animation: css-animation-fadeInUp 0.6s ease-out forwards;
 }
 .about-me:hover {
   box-shadow: 60px 20px #800020; /* Тень */
@@ -177,7 +177,7 @@ main.content {
   line-height: 1.8; /* Межстрочный интервал */
   transition: box-shadow 0.3s ease;
   opacity: 0; /* Изначально скрыт */
-  animation: fade-in 0.6s ease-out forwards;
+  animation: css-animation-fadeInUp 0.6s ease-out forwards;
 }
 .skill-tag:hover {
   box-shadow: 60px 20px #800020; /* Тень */
@@ -207,7 +207,7 @@ main.content {
   line-height: 1.8; /* Межстрочный интервал */
   transition: box-shadow 0.3s ease;
   opacity: 0; /* Изначально скрыт */
-  animation: fade-in 0.6s ease-out forwards;
+  animation: css-animation-fadeInUp 0.6s ease-out forwards;
 }
 .skill-tag:hover {
   box-shadow: 60px 20px #800020; /* Тень */
@@ -223,7 +223,7 @@ main.content {
   line-height: 1.6; /* Межстрочный интервал */
   margin: 0; /* Убираем отступы */
 }
-@keyframes fade-in {
+@keyframes css-animation-fadeInUp {
   to {
     opacity: 1;
   }
