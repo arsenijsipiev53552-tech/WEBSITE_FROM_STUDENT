@@ -85,7 +85,7 @@ main.content {
   font-weight: 300; /* Легкое начертание шрифта */
 }
 .profile-container {
-  justify-content: left; /* Выравнивание по центру */
+  justify-content: flex-start; /* Выравнивание по центру */
   flex-wrap: wrap; /* Перенос на новую строку при необходимости */
   gap: 15px; /* Расстояние между навыками */
   margin: 30px 0; /* Вертикальные отступы */
@@ -97,9 +97,14 @@ main.content {
   margin: 20px auto; /* Центрирование и отступы */
   border: 4px solid Red; /* Красная рамка вокруг фото */
   transition: border 0.3s ease;
+  opacity: 0; /* Изначально скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление за 1 секунду */
 }
 .profile-photo:hover {
   border: 4px solid #800020; /* Тень */
+}
+.profile-photo.visible {
+  opacity: 1;
 }
 .profile-name {
   font-size: 24px; /* Размер шрифта имени */
@@ -110,9 +115,14 @@ main.content {
   box-shadow: 30px 10px Red; /* Тень */
   line-height: 1.8; /* Межстрочный интервал */
   transition: box-shadow 0.3s ease;
+  opacity: 0; /* Изначально скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление за 1 секунду */
 }
 .profile-name:hover {
   box-shadow: 60px 20px #800020; /* Тень */
+}
+.profile-name.visible {
+  opacity: 1;
 }
 .profile-group {
   font-size: 24px; /* Размер шрифта имени */
@@ -123,9 +133,14 @@ main.content {
   box-shadow: 30px 10px Red; /* Тень */
   line-height: 1.8; /* Межстрочный интервал */ 
   transition: box-shadow 0.3s ease;
+  opacity: 0; /* Изначально скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление за 1 секунду */
 }
 .profile-group:hover {
   box-shadow: 60px 20px #800020; /* Тень */
+}
+.profile-group.visible {
+  opacity: 1;
 }
 .about-me {
   background: White; /* Светлый градиентный фон */
@@ -135,9 +150,14 @@ main.content {
   font-size: 16px; /* Размер шрифта текста */
   line-height: 1.8; /* Межстрочный интервал */
   transition: box-shadow 0.3s ease;
+  opacity: 0; /* Изначально скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление за 1 секунду */
 }
 .about-me:hover {
   box-shadow: 60px 20px #800020; /* Тень */
+}
+.about-me.visible {
+  opacity: 1;
 }
 /* ===== НАВЫКИ ===== */
 .skills-container {
@@ -161,11 +181,15 @@ main.content {
   font-size: 16px; /* Размер шрифта текста */
   line-height: 1.8; /* Межстрочный интервал */
   transition: box-shadow 0.3s ease;
+  opacity: 0; /* Изначально скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление за 1 секунду */
 }
 .skill-tag:hover {
   box-shadow: 60px 20px #800020; /* Тень */
 }
-/* ===== ОПЫТ РАБОТЫ ===== */
+.skill-tag.visible {
+  opacity: 1;
+}
 .experience-section {
   margin-top: 50px; /* Отступ сверху */
 }
@@ -190,9 +214,14 @@ main.content {
   font-size: 16px; /* Размер шрифта текста */
   line-height: 1.8; /* Межстрочный интервал */
   transition: box-shadow 0.3s ease;
+  opacity: 0; /* Изначально скрыт */
+  transition: opacity 1s ease-in-out; /* Плавное появление за 1 секунду */
 }
 .skill-tag:hover {
   box-shadow: 60px 20px #800020; /* Тень */
+}
+.skill-tag.visible {
+  opacity: 1;
 }
 .experience-title {  border: 4px solid Red; /* Красная рамка вокруг фото */
   font-size: 20px; /* Размер шрифта заголовка опыта */
@@ -205,6 +234,13 @@ main.content {
   line-height: 1.6; /* Межстрочный интервал */
   margin: 0; /* Убираем отступы */
 }
+
+
+
+
+
+
+
 /* ===== КОНТАКТЫ ===== */
 .contacts {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Светлый градиентный фон */
@@ -253,6 +289,9 @@ main.content {
     font-weight: bold;
     text-align: left;
 }
+
+
+
 /* ===== ФУТЕР ===== */
 .footer {
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Темный градиентный фон */
