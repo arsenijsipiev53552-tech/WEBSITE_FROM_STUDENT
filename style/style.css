@@ -85,7 +85,7 @@ main.content {
   font-weight: 300; /* Легкое начертание шрифта */
 }
 .profile-container {
-  justify-content: center; /* Выравнивание по центру */
+  justify-content: left; /* Выравнивание по центру */
   flex-wrap: wrap; /* Перенос на новую строку при необходимости */
   gap: 15px; /* Расстояние между навыками */
   margin: 30px 0; /* Вертикальные отступы */
@@ -106,24 +106,32 @@ main.content {
   margin: 10px 0; /* Вертикальные отступы */
   font-weight: 500; /* Средняя жирность шрифта */
   background: White; /* Светлый градиентный фон */
-  padding: 25px; /* Внутренние отступы */
-  box-shadow: 60px 20px Red; /* Тень */
+  padding: 10px; /* Внутренние отступы */
+  box-shadow: 30px 10px Red; /* Тень */
   line-height: 1.8; /* Межстрочный интервал */
+  transition: box-shadow 0.3s ease;
+}
+.profile-name:hover {
+  box-shadow: 60px 20px #800020; /* Тень */
 }
 .profile-group {
   font-size: 24px; /* Размер шрифта имени */
   margin: 5px 0; /* Вертикальные отступы */
   font-weight: 500; /* Средняя жирность шрифта */
   background: White; /* Светлый градиентный фон */
-  padding: 25px; /* Внутренние отступы */
-  box-shadow: 60px 20px Red; /* Тень */
-  line-height: 1.8; /* Межстрочный интервал */
+  padding: 10px; /* Внутренние отступы */
+  box-shadow: 30px 10px Red; /* Тень */
+  line-height: 1.8; /* Межстрочный интервал */ 
+  transition: box-shadow 0.3s ease;
+}
+.profile-group:hover {
+  box-shadow: 60px 20px #800020; /* Тень */
 }
 .about-me {
   background: White; /* Светлый градиентный фон */
   padding: 25px; /* Внутренние отступы */
   margin: 30px 0; /* Вертикальные отступы */
-  box-shadow: 60px 20px Red; /* Тень */
+  box-shadow: 30px 10px Red; /* Тень */
   font-size: 16px; /* Размер шрифта текста */
   line-height: 1.8; /* Межстрочный интервал */
   transition: box-shadow 0.3s ease;
@@ -149,7 +157,7 @@ main.content {
   background: White; /* Светлый градиентный фон */
   padding: 25px; /* Внутренние отступы */
   margin: 30px 0; /* Вертикальные отступы */
-  box-shadow: 60px 20px Red; /* Тень */
+  box-shadow: 30px 10px Red; /* Тень */
   font-size: 16px; /* Размер шрифта текста */
   line-height: 1.8; /* Межстрочный интервал */
   transition: box-shadow 0.3s ease;
@@ -178,15 +186,15 @@ main.content {
   padding: 25px; /* Внутренние отступы */
   margin: 20px 0; /* Вертикальные отступы */
   background: White; /* Светлый градиентный фон */
-  box-shadow: 60px 20px Red; /* Тень */
+  box-shadow: 30px 10px Red; /* Тень */
   font-size: 16px; /* Размер шрифта текста */
   line-height: 1.8; /* Межстрочный интервал */
-  transition: transform 0.3s ease; /* Плавная анимация трансформации */
+  transition: box-shadow 0.3s ease;
 }
-.experience-card:hover {
-  transform: translateX(5px); /* Сдвиг вправо при наведении */
+.skill-tag:hover {
+  box-shadow: 60px 20px #800020; /* Тень */
 }
-.experience-title {
+.experience-title {  border: 4px solid Red; /* Красная рамка вокруг фото */
   font-size: 20px; /* Размер шрифта заголовка опыта */
   color: #2c3e50; /* Темно-синий цвет текста */
   margin: 0 0 10px 0; /* Отступ снизу */
